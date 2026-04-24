@@ -815,8 +815,18 @@ section[id] {
     --header-height: 76px;
   }
 
+  .header-inner {
+    gap: 12px;
+  }
+
   .nav-toggle {
     display: inline-flex;
+    flex-shrink: 0;
+  }
+
+  .brand-logo {
+    height: 52px;
+    max-width: min(62vw, 220px);
   }
 
   .site-nav {
@@ -857,6 +867,18 @@ section[id] {
     padding-top: 40px;
   }
 
+  .hero-grid {
+    gap: 24px;
+  }
+
+  .hero-copy h1 {
+    max-width: none;
+  }
+
+  .hero-lead {
+    font-size: 1rem;
+  }
+
   .panel-shell,
   .visual-frame,
   .cta-shell {
@@ -877,15 +899,22 @@ section[id] {
     width: min(calc(100% - 24px), var(--container));
   }
 
-  .hero-copy h1 {
-    font-size: clamp(3rem, 15vw, 4.5rem);
+  .content-section {
+    padding: 68px 0;
   }
 
-  .services-grid,
-  .stats-grid,
-  .process-grid,
-  .testimonials-grid {
-    grid-template-columns: 1fr;
+  .brand-logo {
+    height: 44px;
+    max-width: 58vw;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.5rem, 13vw, 3.6rem);
+  }
+
+  .eyebrow {
+    letter-spacing: 0.22em;
+    font-size: 0.72rem;
   }
 
   .hero-actions,
@@ -895,21 +924,62 @@ section[id] {
     align-items: stretch;
   }
 
+  .hero-points {
+    gap: 12px;
+  }
+
+  .services-grid,
+  .stats-grid,
+  .process-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid article,
+  .service-card,
+  .process-step,
+  .testimonial-card,
+  .cta-card {
+    padding: 20px;
+  }
+
   .button,
   .contact-chip-group a {
     width: 100%;
   }
 
-  .service-card,
-  .process-step,
-  .testimonial-card {
-    padding: 22px;
+  .section-heading h2,
+  .standards-copy h2,
+  .cta-copy h2 {
+    font-size: clamp(2rem, 10vw, 2.6rem);
   }
 
   .service-card h3,
   .process-step h3,
   .testimonial-card p,
-  .visual-copy h3 {
+  .visual-copy h3,
+  .hero-panel h2,
+  .standards-list h3 {
     font-size: 1.65rem;
+  }
+
+  .panel-shell,
+  .visual-frame,
+  .cta-shell {
+    padding: 20px;
+  }
+
+  .visual-frame {
+    min-height: 340px;
+  }
+
+  .vehicle-silhouette {
+    left: 16px;
+    right: 16px;
+    bottom: 24px;
+  }
+
+  .cta-shell {
+    gap: 18px;
   }
 }
