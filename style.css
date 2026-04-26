@@ -1399,3 +1399,52 @@ section[id] {
     min-height: 210px;
   }
 }
+
+
+@media (max-width: 560px) {
+  .standards-simple-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .standards-simple-grid .standards-copy {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .standards-simple-grid .standards-visual {
+    order: 2;
+    width: 100%;
+  }
+
+  .standards-simple-grid .standards-copy h2 {
+    max-width: 100%;
+    font-size: clamp(2rem, 10vw, 2.8rem);
+    line-height: 1.05;
+    word-break: normal;
+  }
+
+  .standards-simple-grid .standards-copy p {
+    max-width: 100%;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .standards-photo-frame {
+    min-height: 240px;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .standards-simple-grid .vehicle-photo {
+    min-height: 240px;
+    width: 100%;
+    padding: 12px;
+    object-fit: contain;
+    object-position: center center;
+  }
+}
