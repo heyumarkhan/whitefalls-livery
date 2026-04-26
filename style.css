@@ -1496,3 +1496,12 @@ section[id] {
     min-height: 170px;
   }
 }
+
+
+.nav-cta,
+.nav-cta:visited,
+.site-nav a.nav-cta,
+.site-nav a.nav-cta:hover,
+.site-nav a.nav-cta:focus-visible {
+  color: #050505 !important;
+}
