@@ -1302,3 +1302,30 @@ section[id] {
     min-height: 220px;
   }
 }
+
+
+.standards-simple-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(340px, 0.8fr);
+}
+
+.standards-simple-grid .standards-copy {
+  max-width: 46rem;
+  padding-right: 18px;
+}
+
+.standards-simple-grid .standards-copy h2 {
+  max-width: 14ch;
+  line-height: 1.02;
+}
+
+.standards-simple-grid .standards-copy p {
+  max-width: 32rem;
+}
+
+@media (max-width: 1080px) {
+  .standards-simple-grid .standards-copy,
+  .standards-simple-grid .standards-copy h2,
+  .standards-simple-grid .standards-copy p {
+    max-width: none;
+  }
+}
