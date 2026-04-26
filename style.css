@@ -1257,3 +1257,48 @@ section[id] {
     min-height: 220px;
   }
 }
+
+
+.standards-simple-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.95fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.standards-simple-grid .standards-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 34rem;
+  padding: 0;
+}
+
+.standards-simple-grid .standards-copy h2 {
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+}
+
+.standards-photo-frame {
+  min-height: 320px;
+}
+
+.standards-simple-grid .vehicle-photo {
+  min-height: 320px;
+}
+
+@media (max-width: 1080px) {
+  .standards-simple-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .standards-simple-grid .standards-copy {
+    max-width: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .standards-photo-frame,
+  .standards-simple-grid .vehicle-photo {
+    min-height: 220px;
+  }
+}
