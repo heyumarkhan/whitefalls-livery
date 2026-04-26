@@ -1329,3 +1329,73 @@ section[id] {
     max-width: none;
   }
 }
+
+
+@media (max-width: 780px) {
+  .standards-simple-grid,
+  .winery-grid {
+    gap: 18px;
+  }
+
+  .standards-simple-grid .standards-copy,
+  .winery-copy {
+    max-width: none;
+    padding-right: 0;
+  }
+
+  .standards-simple-grid .standards-copy h2,
+  .winery-copy h2 {
+    font-size: clamp(1.9rem, 8vw, 2.8rem);
+    max-width: none;
+  }
+
+  .standards-simple-grid .standards-copy p,
+  .winery-copy p {
+    max-width: none;
+  }
+
+  .standards-photo-frame,
+  .winery-image-frame {
+    min-height: 240px;
+  }
+
+  .standards-simple-grid .vehicle-photo,
+  .winery-photo {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .standards-section .container,
+  .winery-section .container {
+    width: min(calc(100% - 20px), 1400px);
+  }
+
+  .standards-simple-grid,
+  .winery-grid {
+    gap: 16px;
+  }
+
+  .standards-simple-grid .standards-copy h2,
+  .winery-copy h2 {
+    font-size: clamp(1.75rem, 9vw, 2.35rem);
+    line-height: 1.06;
+  }
+
+  .standards-simple-grid .standards-copy p,
+  .winery-copy p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .standards-photo-frame,
+  .winery-image-frame {
+    min-height: 210px;
+    border-radius: 22px;
+  }
+
+  .standards-simple-grid .vehicle-photo,
+  .winery-photo {
+    min-height: 210px;
+  }
+}
