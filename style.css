@@ -636,13 +636,24 @@ section[id] {
 
 .standards-card {
   display: grid;
-  grid-template-columns: minmax(320px, 0.95fr) minmax(0, 1.05fr);
+  grid-template-columns: 1fr;
   gap: 0;
   background: rgba(18, 18, 18, 0.88);
   border: 1px solid var(--line);
   border-radius: 36px;
   overflow: hidden;
   box-shadow: var(--shadow);
+}
+
+.standards-heading-block {
+  padding: 34px 34px 8px;
+}
+
+.standards-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
+  gap: 0;
+  align-items: stretch;
 }
 
 .visual-frame {
@@ -671,13 +682,13 @@ section[id] {
 }
 
 .standards-copy {
-  padding: 34px;
+  padding: 28px 34px 34px;
 }
 
 .standards-intro {
-  margin: 14px 0 24px;
+  margin: 14px 0 0;
   color: rgba(247, 242, 229, 0.82);
-  max-width: 34rem;
+  max-width: 42rem;
 }
 
 .vehicle-photo {
@@ -698,12 +709,12 @@ section[id] {
   margin-top: 28px;
 }
 
-.standards-copy > .visual-kicker {
+.standards-heading-block > .visual-kicker {
   display: inline-block;
   margin-bottom: 10px;
 }
 
-.standards-copy > h3 {
+.standards-heading-block > h3 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3rem);
 }
@@ -747,16 +758,31 @@ section[id] {
   font-size: 1.6rem;
 }
 
-.winery-image-placeholder {
+.winery-image-placeholder,
+.winery-image-frame {
   min-height: 440px;
   border-radius: 34px;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 24px;
+}
+
+.winery-image-frame {
+  padding: 0;
+  background: #0c0c0c;
+}
+
+.winery-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .process-grid {
@@ -881,7 +907,8 @@ section[id] {
   .cta-shell,
   .routes-layout,
   .winery-grid,
-  .standards-card {
+  .standards-card,
+  .standards-detail-grid {
     grid-template-columns: 1fr;
   }
 
@@ -969,23 +996,21 @@ section[id] {
   .panel-shell,
   .cta-shell,
   .route-origin-card,
-  .route-destinations article {
+  .route-destinations article,
+  .standards-heading-block,
+  .standards-copy {
     padding: 24px;
   }
 
   .visual-frame,
   .visual-photo-frame {
-    min-height: 460px;
-  }
-
-  .standards-copy {
-    padding: 24px;
+    min-height: 420px;
   }
 
   .vehicle-photo {
-    min-height: 460px;
+    min-height: 420px;
     object-position: center 58%;
-    padding: 28px 18px 0;
+    padding: 24px 16px 0;
   }
 
   .route-destinations,
@@ -1069,6 +1094,7 @@ section[id] {
 
   .panel-shell,
   .cta-shell,
+  .standards-heading-block,
   .standards-copy {
     padding: 20px;
   }
@@ -1112,9 +1138,14 @@ section[id] {
     max-width: none;
   }
 
-  .winery-image-placeholder {
+  .winery-image-placeholder,
+  .winery-image-frame {
     min-height: 280px;
     border-radius: 26px;
+  }
+
+  .winery-photo {
+    min-height: 280px;
   }
 
   .cta-shell {
