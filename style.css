@@ -629,7 +629,7 @@ section[id] {
 .standards-grid,
 .winery-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  grid-template-columns: minmax(0, 1.1fr) minmax(240px, 0.8fr);
   gap: 24px;
   align-items: stretch;
 }
@@ -646,12 +646,12 @@ section[id] {
 }
 
 .standards-heading-block {
-  padding: 34px 34px 8px;
+  padding: 34px 34px 10px;
 }
 
 .standards-detail-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   gap: 0;
   align-items: stretch;
 }
@@ -683,6 +683,9 @@ section[id] {
 
 .standards-copy {
   padding: 30px 34px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .standards-intro {
@@ -702,12 +705,6 @@ section[id] {
   padding: 32px 24px 0;
 }
 
-
-.standards-list {
-  display: grid;
-  gap: 18px;
-  margin-top: 28px;
-}
 
 .standards-heading-block > .visual-kicker {
   display: inline-block;
@@ -1004,11 +1001,11 @@ section[id] {
 
   .visual-frame,
   .visual-photo-frame {
-    min-height: 320px;
+    min-height: 360px;
   }
 
   .vehicle-photo {
-    min-height: 320px;
+    min-height: 360px;
     object-position: center center;
     padding: 18px 14px;
   }
